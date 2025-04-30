@@ -1,5 +1,9 @@
+// importa el modulo http de Nodejs que permite crear un servidor web
 const http = require('http');
+// Importa el modulo fs (File System), que permite trabajar con archivos (leer, escribir, etc)
 const fs = require('fs');
+// Define una constante llamada PORT con el valor 3000, 
+// que sera el numero de puerto donde tu servidor escuchara las conexiones.
 const PORT = 3000;
 
 
