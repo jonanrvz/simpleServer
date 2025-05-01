@@ -11,6 +11,7 @@ const PORT = 3000;
 // Esta función recibe un callback que se ejecuta 
 // cada vez que llega una solicitud (req = request, res = response)
 const server = http.createServer(function (req, res) {
+  // Responde al cliente enviando las cabeceras(headers)
   res.writeHead(200, {'content-type': 'text/html'});
   fs.createReadStream('index.html').pipe(res);
 });
