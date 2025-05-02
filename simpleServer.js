@@ -12,6 +12,7 @@ const PORT = 3000;
 // cada vez que llega una solicitud (req = request, res = response)
 const server = http.createServer(function (req, res) {
   // Responde al cliente enviando las cabeceras(headers)
+  // 200 indica que la solicitud fue exitosa y 'content-type' indica el tipo de contenido que se está enviando.
   res.writeHead(200, {'content-type': 'text/html'});
   fs.createReadStream('index.html').pipe(res);
 });
