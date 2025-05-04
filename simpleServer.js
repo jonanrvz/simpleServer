@@ -15,6 +15,7 @@ const server = http.createServer(function (req, res) {
   // 200 indica que la solicitud fue exitosa y 'content-type' indica el tipo de contenido que se está enviando.
   res.writeHead(200, {'content-type': 'text/html'});
   // Abre el archivo index.html como un stream de lectura (no carga todo el archivo en memoria de golpe)
+  // .pipe(res) conecta ese stream directamente con la respuesta del servidor,
   fs.createReadStream('index.html').pipe(res);
 });
 
