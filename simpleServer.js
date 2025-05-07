@@ -22,4 +22,5 @@ const server = http.createServer(function (req, res) {
 
 // Instruye al servidor para que empiece a escuchar conexiones en el puerto definido (3000)
 server.listen(PORT);
+// Muestra un mensaje en la consola indicando que el servidor ha comenzado a escuchar en el puerto 3000
 console.log(`Server started on port ${PORT}`);
