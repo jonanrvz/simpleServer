@@ -5,11 +5,13 @@ const http = require('http');
 const fs = require('fs');
 // Define una constante llamada PORT con el valor 3000, 
 // que sera el numero de puerto donde tu servidor escuchara las conexiones.
+// Los puertos son como puertas de entrada a tu computadora, y el puerto 3000 es un puerto comunmente usado para desarrollo.
+// Puedes cambiarlo a otro numero si lo deseas, pero asegúrate de que no haya otro servicio usando ese puerto.
 const PORT = 3000;
 
 
 // Crea un servidor HTTP usando http.createServer
-// Esta función recibe un callback que se ejecuta 
+// Esta función recibe un callback que se ejecuta
 // cada vez que llega una solicitud (req = request, res = response)
 const server = http.createServer(function (req, res) {
   // Responde al cliente enviando las cabeceras(headers)
