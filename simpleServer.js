@@ -24,6 +24,8 @@ const server = http.createServer(function (req, res) {
   // Abre el archivo index.html como un stream de lectura (no carga todo el archivo en memoria de golpe)
   // .pipe(res) conecta ese stream directamente con la respuesta del servidor,
   // enviando el contenido del archivo al navegador.
+  // como parametro recibe el nombre del archivo que se va a leer (en este caso, 'index.html')
+  // y el método pipe() se usa para enviar el contenido del archivo al cliente.
   fs.createReadStream('index.html').pipe(res);
 });
 
